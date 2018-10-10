@@ -1,0 +1,73 @@
+body {
+  background: #2e2e2e;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+// Paused
+#paused {
+  div {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+  p {
+    color: #fff;
+  }
+  &.show { display: block; }
+  background: rgba(#000, .9);
+  display: none;
+  font-family: Lato;
+  font-size: 4rem;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  user-select: none;
+}
+
+// Game
+#game {
+  #paused.show + & {
+    filter: blur(.5rem);
+  }
+  height: 100vh;
+  font-family: Lato;
+  user-select: none;
+}
+
+// Stats
+.stats {
+  .stat-name {
+    &:after { content: ':'; }
+    font-weight: 700;
+    margin-right: .5rem;
+  }
+  // .stat-value { font-family: Montserrat; }
+  color: #fd990d;
+  font-size: 1.5rem;
+  left: 0;
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+}
+
+// Player
+.player {
+  bottom: 0;
+  height: 6rem * 1.75;
+  position: absolute;
+  width: 5rem * 1.75;
+}
+
+// Item
+.item {
+  // background: #a78eb8;
+  // height: 48px;
+  position: absolute;
+  // width: 48px;
+}

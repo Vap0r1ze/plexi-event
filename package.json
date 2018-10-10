@@ -1,0 +1,30 @@
+{
+  "name": "plexi-round1",
+  "version": "1.0.0",
+  "description": "Plexi round 1",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --hot"
+  },
+  "author": "Vap0r1ze",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "eventemitter3": "^3.1.0"
+  }
+}
