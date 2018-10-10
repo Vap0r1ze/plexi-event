@@ -1,4 +1,4 @@
 node_modules
 *.pdn
 package-lock.json
-public/dist
+public/game.js
