@@ -52,6 +52,7 @@ export default class Player {
     let playerXHigh = this.x + this.el.clientWidth / 2
     let xBounds = itemXLow <= playerXHigh && itemXHigh >= playerXLow
     let yBounds = itemY >= this.parent.height - this.el.clientHeight
+      && itemY - item.height / 2 <= this.parent.height - this.el.clientHeight
     return xBounds && yBounds
   }
 }
