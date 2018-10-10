@@ -36,8 +36,7 @@ export default class Item {
     this.type = itemTypes[Math.floor(Math.random() * itemTypes.length)]
     this.loaded = false
 
-    this.x = Math.max(this.x, this.width / 2)
-    this.x = Math.min(this.x, this.parent.width - this.width / 2)
+    this.x = Math.min(this.x, this.parent.width - this.width)
 
     this.el = document.createElement('img')
     this.el.onload = () => {
