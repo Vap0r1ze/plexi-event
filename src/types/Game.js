@@ -71,7 +71,7 @@ export default class Game {
           this.loseStreak++
         }
       } else {
-        item.fallBy(15 + this.uptime / 5000)
+        item.fallBy(Math.min(15 + this.uptime / 5000, item.height))
         item.update()
       }
     }
