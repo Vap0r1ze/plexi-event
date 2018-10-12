@@ -1,7 +1,6 @@
 import Stats from './Stats'
 import Player from './Player'
 import Item from './Item'
-// import EventEmitter from 'eventemitter3'
 
 /**
  * Class for controlling the game and emitting game events
