@@ -7,6 +7,7 @@ const itemTypes = [
 
 /**
  * Represents a falling item
+ * @name Item
  * @prop {Game} parent - Parent controller containing the player
  * @prop {HTMLElement} el - Element of the item
  * @prop {Number} width - Width of the item
@@ -14,7 +15,7 @@ const itemTypes = [
  * @prop {Number} x - Position of the item on the x-axis
  * @prop {Number} y - Position of the item on the y-axis
  */
-export default class Item {
+class Item {
   /**
    * Create an item
    * @param {Game} parent - Parent controller containing the player
@@ -67,3 +68,5 @@ export default class Item {
       this.y += n
   }
 }
+
+export default Item

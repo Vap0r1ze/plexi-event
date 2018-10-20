@@ -1,10 +1,11 @@
 /**
  * Class for managing game stats
+ * @name Stats
  * @prop {Game} parent - Parent controller containing the stats
  * @prop {HTMLElement} el - Element of the stats display
  * @prop {Object} data - Object containing data of the specific stat
  */
-export default class Stats {
+class Stats {
   /**
    * Create a stats controller
    * @param {Game} parent - Parent controller containing the stats
@@ -92,7 +93,7 @@ export default class Stats {
   /**
    * Increment a stat
    * @param {String} key - Key of value
-   * @param {Number=1} increment - Increment to add to the value 
+   * @param {Number} [increment=1] - Increment to add to the value 
    */
   incrStat (key, increment = 1) {
     if (!this.data[key])
@@ -100,3 +101,5 @@ export default class Stats {
     this.data[key].value += increment
   }
 }
+
+export default Stats

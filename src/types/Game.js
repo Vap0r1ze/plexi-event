@@ -4,6 +4,7 @@ import Item from './Item'
 
 /**
  * Class for controlling the game and emitting game events
+ * @name Game
  * @prop {HTMLElement} el - Element that game is mounted to
  * @prop {Number} width - Width of the game in pixels
  * @prop {Number} height - Height of the game in pixels
@@ -13,7 +14,7 @@ import Item from './Item'
  * @prop {Item[]} items - All items currently on the screen
  * @prop {Number} startTime - Timestamp of which the game was started
  */
-export default class Game {
+class Game {
   /**
    * Create a game controller
    * @param {String} el - Selector of element to mount the game
@@ -120,3 +121,5 @@ export default class Game {
     document.getElementById('paused').querySelector('p').innerText = `You lost with ${this.stats.getStat('points')} points!`
   }
 }
+
+export default Game

@@ -1,15 +1,16 @@
 /**
  * Class for controlling the player
+ * @name Player
  * @prop {Game} parent - Parent controller containing the player
  * @prop {HTMLElement} el - Element of the player
  * @prop {Number} x - Position of the player on the x-axis
  * @prop {Number} width - Width of the player in pixels
  */
-export default class Player {
+class Player {
   /**
    * Create a player controller
    * @param {Game} parent - Parent controller containing the player
-   * @param {Number=0} [x] - Initial position of the player on the x-axis
+   * @param {Number} [x=0] - Initial position of the player on the x-axis
    */
   constructor (parent, x = 0) {
     this.parent = parent
@@ -56,3 +57,5 @@ export default class Player {
     return xBounds && yBounds
   }
 }
+
+export default Player
